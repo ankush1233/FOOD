@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG in Box</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Box background color */
+  border: 2px solid #ccc; /* Border for the box */
+  border-radius: 8px; /* Optional rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.box svg {
+  fill:red; /* Icon color */
+  width: 40px; /* Icon width */
+  height: 40px; /* Icon height */
+}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <!-- Inline SVG Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+      <path d="M12 2L2 7v10l10 5 10-5V7l-10-5zm0 3.4L18 8v8l-6 3-6-3V8l6-2.6z"/>
+    </svg>
+  </div>
+</body>
+</html>
